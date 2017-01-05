@@ -107,23 +107,23 @@ let mimeTypes = [
     "avi": "video/x-msvideo"
 ]
 
-struct MimeType {
+public struct MimeType {
     let ext: String?
-    var value: String {
+    public var value: String {
         guard let ext = ext else {
             return DEFAULT_MIME_TYPE
         }
         return mimeTypes[ext.lowercased()] ?? DEFAULT_MIME_TYPE
     }
-    init(path: String) {
+    public init(path: String) {
         ext = NSString(string: path).pathExtension
     }
 
-    init(path: NSString) {
+    public init(path: NSString) {
         ext = path.pathExtension
     }
 
-    init(url: URL) {
+    public init(url: URL) {
         ext = url.pathExtension
     }
 }

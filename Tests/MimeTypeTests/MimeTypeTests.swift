@@ -1,5 +1,5 @@
 import XCTest
-@testable import MimeType
+import MimeType
 
 class MimeTypeTests: XCTestCase {
     func testMimeTypeFromString() {
