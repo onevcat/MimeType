@@ -31,7 +31,7 @@ let mime = MimeType(path: path).value
 
 let url = URL(fileURLWithPath: "/home/user/cat.png")
 let anotherMime = MimeType(url: url).value
-// "text/html"
+// "image/png"
 ```
 
 ## License
